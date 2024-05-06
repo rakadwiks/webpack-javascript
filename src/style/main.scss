@@ -1,0 +1,37 @@
+$bg : rgb(238, 174, 202);
+$bg-gradient: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+$primary: rgb(174, 195, 238);
+$danger: rgb(83, 183, 72);
+
+
+@import 'bootstrap/scss/bootstrap';
+
+body {
+    width: 100% !important;
+    background: $bg;
+    background: $bg-gradient;
+
+    .card {
+        margin-top: 10rem;
+        width: 90%;
+
+        .float-left {
+            font-size: 10px;
+            float: left;
+        }
+
+        .float-right {
+            font-size: 10px;
+            float: right;
+        }
+    }
+
+    .hasil-card {
+        color: black;
+        font-weight: 600;
+
+        #hasil {
+            font-weight: 100;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+body {
+  width: 100%;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+}
+body .card {
+  margin-top: 10rem;
+}
+body .hasil-card {
+  color: black;
+  font-weight: 600;
+}
+body .hasil-card #hasil {
+  font-weight: 100;
+}/*# sourceMappingURL=main.css.map */
