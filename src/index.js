@@ -1,3 +1,5 @@
+import './vendor.js';
+import _ from 'lodash';
 import './style/main.scss';
 import { run } from "./app/app.js";
 import { AlertService } from "./app/alert.service.js";

@@ -1,8 +1,30 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path =  require('path');
+const path = require('path');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: {
+      import: './src/index.js',
+      dependOn: 'shared',
+    },
+    vendor: './src/vendor.js',
+    hello: {
+      import: './src/hello.js',
+      dependOn: 'shared',
+    },
+    shared: 'lodash',
+  },
+
+  optimization: {
+
+    splitChunks: {
+
+      chunks: 'all',
+
+    },
+
+  },
   plugins: [new HtmlWebpackPlugin({
     template:'./src/template.html', 
   })], // tambahkan nama plugins
